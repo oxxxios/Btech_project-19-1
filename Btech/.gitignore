@@ -1,0 +1,14 @@
+.env
+/venv/
+.idea
+.vscode
+__pycache__/
+/__pycache__/
+*.py[cod]
+*.so
+media
+/Btech/venv/
+venv/
+.idea/
+/.idea/
+__pycache__
