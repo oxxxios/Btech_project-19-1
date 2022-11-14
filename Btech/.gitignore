@@ -1,5 +1,6 @@
 .idea/
 .env
+venv
 db.sqlite3
 static
 media
