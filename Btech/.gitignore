@@ -1,5 +1,5 @@
 .idea/
-.env
+env
 venv
 db.sqlite3
 static
