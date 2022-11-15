@@ -14,5 +14,6 @@ class PodCategoriesName(admin.ModelAdmin):
     model = PodCategories
     list_display = ['name', 'parents']
 
-admin.site.register( PodCategories, PodCategoriesName)
+
+admin.site.register(PodCategories, PodCategoriesName)
 admin.site.register(Modeli_tovarov)
