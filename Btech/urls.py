@@ -15,16 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
 from Btech19 import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/category_products', views.categorys_view),
     path('api/v1/podcategories', views.podcategories_view),
-    path('api/v1/podcategories/Xiaomi', views.xiaomi_view),
-    path('api/v1/podcategories/Samsung', views.samsung_view),
-    path('api/v1/podcategories/Apple', views.apple_view),
+    path('api/v1/podcategories/Xiaomi', views.Xiaomi_view),
+    path('api/v1/podcategories/Samsung', views.Samsung_view),
+    path('api/v1/podcategories/Apple', views.Apple_view),
     path('api/v1/podcategories/Huawei', views.huawei_view),
     path('api/v1/podcategories/Honor', views.honor_view),
     path('api/v1/podcategories/HomePhone', views.homephone_view),
