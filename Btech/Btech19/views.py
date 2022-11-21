@@ -8,6 +8,7 @@ from rest_framework.generics import (
     ListCreateAPIView, RetrieveUpdateDestroyAPIView
 )
 from rest_framework.pagination import PageNumberPagination
+from rest_framework import filters
 
 
 class ProductListAPIView(ListCreateAPIView):
@@ -15,6 +16,9 @@ class ProductListAPIView(ListCreateAPIView):
     serializer_class = ProductListSerializer
     pagination_class = PageNumberPagination
     # permission_classes = [IsAuthenticated]
+    filter_backends = [filters.OrderingFilter, filters.SearchFilter]
+    ordering_fields = ['title', 'price']                    # Ordering by fields specified in the list
+    search_fields = ['title', 'description']                # Searching by fields specified in the list
 
 
 class ProductUpdateDeleteAPIView(RetrieveUpdateDestroyAPIView):
