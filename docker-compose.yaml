@@ -1,0 +1,39 @@
+version: "3.3"
+
+services:
+  postgres_db:
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: ${DB_NAME}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  web:
+    build: .
+    command: sh -c "python manage.py makemigrations && python manage.py migrate && python manage.py collectstatic
+      --no-input && gunicorn -b 0.0.0.0:8000 BTech.wsgi --reload"
+    volumes:
+      - .:/app
+      - ./static:/static
+    ports:
+      - "8000:8000"
+    depends_on:
+      - postgres_db
+
+  nginx:
+    image: nginx:latest
+    volumes:
+      - .:/app
+      - ./config/nginx:/etc/nginx/conf.d
+      - ./static_cdn:/static
+    depends_on:
+      - postgres_db
+      - web
+    ports:
+      - "10080:80"
+      - "10443:443"
+
+volumes:
+  postgres_data:
