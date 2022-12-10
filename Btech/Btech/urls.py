@@ -16,6 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from Btech.reviews.views import TechReviewsApiView, AddReviewView
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("tech/<pk>/reviews/", TechReviewsApiView.as_view()),
+    path("tech/<pk>/add-review/", AddReviewView.as_view())
 ]
