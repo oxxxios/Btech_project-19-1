@@ -1,1 +1,12 @@
+<<<<<<< HEAD
 /Btech/venv/
+=======
+.idea/
+env
+venv
+db.sqlite3
+static
+media
+__pycache__
+*.pyc
+>>>>>>> origin/korzina
