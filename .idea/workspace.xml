@@ -2,7 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6745fe02-910c-424a-bcc4-68f408390455" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Btech/users/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Btech/users/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Btech/users/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Btech/users/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Btech/users/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Btech/users/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Btech/users/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Btech/users/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Btech/users/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Btech/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Btech/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Btech/Btech/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Btech/Btech/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Btech/Btech/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Btech/Btech/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Btech/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Btech/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Btech/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Btech/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,10 +43,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+    "settings.editor.selected.configurable": "vcs.Subversion"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="6745fe02-910c-424a-bcc4-68f408390455" name="Changes" comment="" />
@@ -43,7 +60,7 @@
       <workItem from="1670926892545" duration="3888000" />
       <workItem from="1670937636325" duration="296000" />
       <workItem from="1670938210762" duration="2956000" />
-      <workItem from="1670942673482" duration="4456000" />
+      <workItem from="1670942673482" duration="7298000" />
     </task>
     <servers />
   </component>

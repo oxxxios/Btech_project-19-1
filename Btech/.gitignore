@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .env
 /venv/
 .idea
@@ -14,3 +15,13 @@ venv/
 __pycache__
 db.sqlite3
 .idea
+=======
+.idea/
+env
+venv
+db.sqlite3
+static
+media
+__pycache__
+*.pyc
+>>>>>>> origin/reg_auto
